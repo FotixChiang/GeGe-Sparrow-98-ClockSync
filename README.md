@@ -1,20 +1,20 @@
-# 键盘小屏时钟 · 静默对时
+# 键盘小屏时钟 · 静默对时 (AI书写，人工甩鞭)
 
 > Silent, scheduled clock sync for 258A-family mechanical keyboards with a small screen.
 > Each day the OEM config app is launched for a few seconds on a **private, invisible
 > desktop**, so the keyboard receives host time without any splash window, taskbar entry
 > or focus stealing. Windows 10/11, PowerShell 5.1, **no admin rights** required.
 
-给「带小屏幕、能显示时间」的机械键盘用的自动对时小工具。
+给 GeGe Sparrow 98 带屏版机械键盘用的自动对时小工具（就是个小脚本）。
 
 ## 它解决什么问题
 
-这类键盘（258A 方案，厂商软件是 GeGe / RK / Sparrow 这一套 OEM 工具）的屏幕时钟有两个通病：
+GeGe Sparrow 98 带屏版的时钟有两个问题（258A 方案，厂商软件是 GeGe Keyboard，似乎 OEM 来自RK ）：
 
 1. **只有打开厂商软件时才同步时间**，平时靠键盘自己的 RTC 走，越走越偏。
 2. **厂商软件每次启动都有启动屏**，会闪一下、还抢焦点，烦人。
 
-所以大多数人干脆不开它，时间就一直错着。
+所以~~大多数人~~我干脆不开它，时间就一直错着。
 
 本工具的做法：**每天定时把厂商软件在一个看不见的桌面上唤起几秒，让它把时间写进键盘，然后立刻关掉。** 你不需要点任何东西，屏幕上也不会出现任何窗口。
 
